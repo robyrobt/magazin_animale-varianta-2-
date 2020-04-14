@@ -1,14 +1,18 @@
-#pragma once
+#ifndef REPOFILE_H
+#define REPOFILE_H
+
 #include "repo.h"
 
 template<class T>
 class RepoFile : public Repo<T> {
-	private:
-		char* file_name;
-	public:
-		RepoFile();
-		RepoFile(const char*);
-		~RepoFile();
-		void loadFromFile(const char*);
-		void saveToFile();
+private:
+	char* file_name;
+public:
+	RepoFile();
+	RepoFile(const char*);
+	~RepoFile();
+	void loadFromFile(const char*);
+	void saveToFile();
 };
+
+#endif // !REPOFILE_H
