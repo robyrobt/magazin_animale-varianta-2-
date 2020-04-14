@@ -16,7 +16,11 @@ public:
 };
 
 template<class T>
-RepoFile<T>::RepoFile<T>(){}
+RepoFile<T>::RepoFile<T>():Repo<T>(){}
 
+template<class T>
+void RepoFile<T>::saveToFile() {
+
+}
 
 #endif // !REPOFILE_H
