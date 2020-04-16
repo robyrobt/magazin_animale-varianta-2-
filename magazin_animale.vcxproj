@@ -153,6 +153,7 @@
     <ClCompile Include="teste_animal_companie.cpp" />
     <ClCompile Include="teste_produs_animal_companie.cpp" />
     <ClCompile Include="teste_repo.cpp" />
+    <ClCompile Include="teste_repo_file.cpp" />
     <ClCompile Include="utils.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -163,7 +164,11 @@
     <ClInclude Include="teste_animal_companie.h" />
     <ClInclude Include="teste_produs_animal_companie.h" />
     <ClInclude Include="teste_repo.h" />
+    <ClInclude Include="teste_repo_file.h" />
     <ClInclude Include="utils.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="teste_repo_file.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

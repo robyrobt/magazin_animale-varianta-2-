@@ -6,6 +6,7 @@
 #include "teste_animal_companie.h"
 #include "teste_produs_animal_companie.h"
 #include "teste_repo.h"
+#include "teste_repo_file.h"
 
 void teste() {
     teste_animal_companie();
@@ -14,6 +15,9 @@ void teste() {
     teste_update_repo();
     teste_findElem_repo();
     teste_findByName_repo();
+    teste_add_and_del_repo_file();
+    teste_update_repo_file();
+    teste_find_repo_file();
     std::cout << "testele au trecut cu succes!!" << std::endl;
 }
 

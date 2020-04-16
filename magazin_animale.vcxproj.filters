@@ -28,6 +28,9 @@
     <Filter Include="Header Files\repo">
       <UniqueIdentifier>{0b773392-16a3-491d-9052-163315d2d330}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Resource Files\teste">
+      <UniqueIdentifier>{b3dfca73-3367-4109-b518-1cf1cd488569}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="utils.cpp">
@@ -50,6 +53,9 @@
     </ClCompile>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="teste_repo_file.cpp">
+      <Filter>Source Files\teste</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -77,5 +83,13 @@
     <ClInclude Include="repo_file.h">
       <Filter>Header Files\repo</Filter>
     </ClInclude>
+    <ClInclude Include="teste_repo_file.h">
+      <Filter>Header Files\teste</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="teste_repo_file.txt">
+      <Filter>Resource Files\teste</Filter>
+    </Text>
   </ItemGroup>
 </Project>

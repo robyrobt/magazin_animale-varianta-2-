@@ -41,8 +41,8 @@ AnimalCompanie::AnimalCompanie(std::string linie) {
 	std::string cod, varsta, nr_exemplare, name, pret, data;
 	iss >> cod >> name >> pret >> data >> varsta >> nr_exemplare;
 	this->cod = std::stoi(cod);
-	this->name = new char[strlen(name.c_str()) + 1];
-	strcpy_s(this->name, strlen(name.c_str() + 1), name.c_str());
+	this->name = new char[sizeof(name) + 1];
+	strcpy_s(this->name, sizeof(name) + 1, name.c_str());
 	this->pret = strtof((pret).c_str(), 0);
 	this->varsta = std::stoi(varsta);
 	this->nr_exemplare = std::stoi(nr_exemplare);
