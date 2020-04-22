@@ -25,14 +25,9 @@ int AnimalService::deleteAnimal(const char* name) {
 
 void AnimalService::updateAnimal(const char* name, int new_cod, const char* new_name, float new_pret, struct data new_data, int new_varsta, int new_nr_exemplare) {
 	AnimalCompanie update = repo.findByName(name);
-	if (update == AnimalCompanie()) {
-		std::cout << "fail" << std::endl;
-	}
-	else {
-		AnimalCompanie up(new_cod, new_name, new_pret, new_data, new_varsta, new_nr_exemplare);
-		repo.updateItem(update, up);
-		repo.saveToFile();
-	}
+	AnimalCompanie up(new_cod, new_name, new_pret, new_data, new_varsta, new_nr_exemplare);
+	repo.updateItem(update, up);
+	repo.saveToFile();
 }
 
 std::deque<AnimalCompanie> AnimalService::getAll() {

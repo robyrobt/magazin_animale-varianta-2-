@@ -52,7 +52,6 @@ void Repo<T>::updateItem(T& most_update, T& update) {
 	most_update = update;
 }
 
-
 template <class T>
 int Repo<T>::findElem(T& t) {
 	for (int i = 0; i < this->getSize(); i++) {

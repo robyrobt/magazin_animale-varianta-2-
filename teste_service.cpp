@@ -1,4 +1,4 @@
-#include <cassert>
+/*#include <cassert>
 #include <iostream>
 #include "teste_service.h"
 #include "repo_file.h"
@@ -50,3 +50,4 @@ void TesteService::teste_update() {
 	assert(strcmp(elem[0].getName(), "veverita") == 0);
 }
 
+*/

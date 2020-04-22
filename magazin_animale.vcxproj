@@ -151,16 +151,19 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="produs_animal_companie.cpp" />
     <ClCompile Include="animal_service.cpp" />
+    <ClCompile Include="produs_service.cpp" />
     <ClCompile Include="teste_animal_companie.cpp" />
     <ClCompile Include="teste_produs_animal_companie.cpp" />
     <ClCompile Include="teste_repo.cpp" />
     <ClCompile Include="teste_repo_file.cpp" />
     <ClCompile Include="teste_service.cpp" />
+    <ClCompile Include="ui.cpp" />
     <ClCompile Include="utils.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="animal_de_companie.h" />
     <ClInclude Include="produs_animal_companie.h" />
+    <ClInclude Include="produs_service.h" />
     <ClInclude Include="repo.h" />
     <ClInclude Include="repo_file.h" />
     <ClInclude Include="animal_service.h" />
@@ -169,9 +172,12 @@
     <ClInclude Include="teste_repo.h" />
     <ClInclude Include="teste_repo_file.h" />
     <ClInclude Include="teste_service.h" />
+    <ClInclude Include="ui.h" />
     <ClInclude Include="utils.h" />
   </ItemGroup>
   <ItemGroup>
+    <Text Include="animale.txt" />
+    <Text Include="produse.txt" />
     <Text Include="teste_repo_file.txt" />
     <Text Include="teste_service.txt" />
   </ItemGroup>

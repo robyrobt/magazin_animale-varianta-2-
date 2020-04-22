@@ -69,6 +69,12 @@
     <ClCompile Include="teste_service.cpp">
       <Filter>Source Files\teste</Filter>
     </ClCompile>
+    <ClCompile Include="produs_service.cpp">
+      <Filter>Source Files\service</Filter>
+    </ClCompile>
+    <ClCompile Include="ui.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="utils.h">
@@ -104,6 +110,12 @@
     <ClInclude Include="teste_service.h">
       <Filter>Header Files\teste</Filter>
     </ClInclude>
+    <ClInclude Include="produs_service.h">
+      <Filter>Header Files\service</Filter>
+    </ClInclude>
+    <ClInclude Include="ui.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="teste_repo_file.txt">
@@ -111,6 +123,12 @@
     </Text>
     <Text Include="teste_service.txt">
       <Filter>Resource Files\teste</Filter>
+    </Text>
+    <Text Include="animale.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="produse.txt">
+      <Filter>Resource Files</Filter>
     </Text>
   </ItemGroup>
 </Project>
