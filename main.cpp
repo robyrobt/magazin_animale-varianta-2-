@@ -7,8 +7,10 @@
 #include "teste_produs_animal_companie.h"
 #include "teste_repo.h"
 #include "teste_repo_file.h"
+#include "teste_service.h"
 
 void teste() {
+    TesteService test;
     teste_animal_companie();
     teste_produs_animal_companie();
     teste_add_and_del_repo();
@@ -18,6 +20,7 @@ void teste() {
     teste_add_and_del_repo_file();
     teste_update_repo_file();
     teste_find_repo_file();
+    test.teste_service();
     std::cout << "testele au trecut cu succes!!" << std::endl;
 }
 

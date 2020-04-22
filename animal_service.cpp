@@ -1,17 +1,17 @@
 #include "animal_service.h"
 
-Service::Service() {}
+AnimalService::AnimalService() {}
 
-Service::Service(RepoFile<AnimalCompanie>& repo) {
+AnimalService::AnimalService(RepoFile<AnimalCompanie>& repo) {
 	this->repo = repo;
 }
 
-void Service::addAnimal(AnimalCompanie& animal) {
+void AnimalService::addAnimal(AnimalCompanie& animal) {
 	repo.addItem(animal);
 	repo.saveToFile();
 }
 
-int Service::deleteAnimal(const char* name) {
+int AnimalService::deleteAnimal(const char* name) {
 	AnimalCompanie del = repo.findByName(name);
 	if (del == AnimalCompanie()) {
 		return -1;
@@ -23,7 +23,7 @@ int Service::deleteAnimal(const char* name) {
 	}
 }
 
-void Service::updateAnimal(const char* name, int new_cod, const char* new_name, float new_pret, struct data new_data, int new_varsta, int new_nr_exemplare) {
+void AnimalService::updateAnimal(const char* name, int new_cod, const char* new_name, float new_pret, struct data new_data, int new_varsta, int new_nr_exemplare) {
 	AnimalCompanie update = repo.findByName(name);
 	if (update == AnimalCompanie()) {
 		std::cout << "fail" << std::endl;
@@ -35,20 +35,20 @@ void Service::updateAnimal(const char* name, int new_cod, const char* new_name, 
 	}
 }
 
-std::deque<AnimalCompanie> Service::getAll() {
+std::deque<AnimalCompanie> AnimalService::getAll() {
 	return repo.getAll();
 }
 
-int Service::findAnimal(AnimalCompanie animal) {
+int AnimalService::findAnimal(AnimalCompanie animal) {
 	return repo.findElem(animal);
 }
 
-AnimalCompanie Service::findAnimalByName(const char* name) {
+AnimalCompanie AnimalService::findAnimalByName(const char* name) {
 	return repo.findByName(name);
 }
 
-int Service::getSize() {
+int AnimalService::getSize() {
 	return repo.getSize();
 }
 
-Service::~Service() {}
+AnimalService::~AnimalService() {}

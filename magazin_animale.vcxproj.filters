@@ -31,6 +31,12 @@
     <Filter Include="Resource Files\teste">
       <UniqueIdentifier>{b3dfca73-3367-4109-b518-1cf1cd488569}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\service">
+      <UniqueIdentifier>{d4888a8b-07cb-444e-9301-7d2ce7c8c88b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\service">
+      <UniqueIdentifier>{0b9ff92d-28d8-4d55-ade9-520275fb32eb}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="utils.cpp">
@@ -55,6 +61,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="teste_repo_file.cpp">
+      <Filter>Source Files\teste</Filter>
+    </ClCompile>
+    <ClCompile Include="animal_service.cpp">
+      <Filter>Source Files\service</Filter>
+    </ClCompile>
+    <ClCompile Include="teste_service.cpp">
       <Filter>Source Files\teste</Filter>
     </ClCompile>
   </ItemGroup>
@@ -86,9 +98,18 @@
     <ClInclude Include="teste_repo_file.h">
       <Filter>Header Files\teste</Filter>
     </ClInclude>
+    <ClInclude Include="animal_service.h">
+      <Filter>Header Files\service</Filter>
+    </ClInclude>
+    <ClInclude Include="teste_service.h">
+      <Filter>Header Files\teste</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="teste_repo_file.txt">
+      <Filter>Resource Files\teste</Filter>
+    </Text>
+    <Text Include="teste_service.txt">
       <Filter>Resource Files\teste</Filter>
     </Text>
   </ItemGroup>
